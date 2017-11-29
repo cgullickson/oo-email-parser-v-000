@@ -7,9 +7,13 @@ class EmailParser
 
 attr_accessor :string
 
-def parse (string)
-  string.split(" " || ", ")
-end
+  def initialize (string)
+    @string = string
+  end
+
+  def parse (string)
+    string.split(" " || ", ")
+  end
 
 
 
