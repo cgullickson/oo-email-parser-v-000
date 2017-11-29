@@ -5,7 +5,7 @@
 
 class EmailParser
 
-attr_accessor :emails
+attr_accessor :string
 
 def parse (string)
   string.split(" " || ", ")
