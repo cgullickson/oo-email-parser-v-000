@@ -16,6 +16,7 @@ attr_accessor :string
       @string.split(", ")
     else
       @string.split(" ")
+    end
   end
 
 end
