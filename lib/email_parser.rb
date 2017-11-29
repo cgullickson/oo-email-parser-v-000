@@ -12,7 +12,8 @@ attr_accessor :string
   end
 
   def parse
-    @string.split(" "||", ")
+    if @string.include?(",")
+      @string.split(", ")
   end
 
 end
