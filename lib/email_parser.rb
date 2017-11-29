@@ -13,9 +13,9 @@ attr_accessor :string
 
   def parse
     if @string.include?(", ")
-      @string.split(", ")
+      @string.split(", ").uniq
     else
-      @string.split(" ")
+      @string.split(" ").uniq
     end
   end
 
