@@ -13,7 +13,7 @@ attr_accessor :string
 
   def parse
     if @string.include?(",")
-      @string.split(", ")
+      @string.split(",")
     else
       @string.split(" ")
     end
