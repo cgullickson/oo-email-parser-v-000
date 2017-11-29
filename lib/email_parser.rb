@@ -14,6 +14,8 @@ attr_accessor :string
   def parse
     if @string.include?(",")
       @string.split(", ")
+    else
+      @string.split(" ")
   end
 
 end
