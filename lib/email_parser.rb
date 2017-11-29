@@ -12,11 +12,7 @@ attr_accessor :string
   end
 
   def parse
-    if @string.include?(", ")
-      @string.split(", ").uniq
-    else
-      @string.split(" ").uniq
-    end
+    @string.split(/[\s,]+/).uniq
   end
 
 end
