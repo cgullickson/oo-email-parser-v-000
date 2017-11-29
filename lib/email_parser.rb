@@ -7,10 +7,8 @@ class EmailParser
 
 attr_accessor :emails
 
-def parse (emails)
-  emails.each do |email|
-    email.split(", ")
-  end
+def parse (string)
+  email.split(" " || ", ")
 end
 
 
