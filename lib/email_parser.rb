@@ -11,10 +11,8 @@ attr_accessor :string
     @string = string
   end
 
-  def parse (string)
-    string.split(" " || ", ")
+  def parse 
+    @string.split(" " || ", ")
   end
-
-
 
 end
